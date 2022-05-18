@@ -1,0 +1,24 @@
+<!--  sldsValidatorIgnore  -->
+<template>
+    <div class="calc_body">
+        <p class="title_name">Calculator</p>
+        <lightning-input class="price" data-id="inputPrice" type="number" label="Price (USDT)" disabled="true" value={price} onchange={handleChange} ></lightning-input>
+
+        <lightning-combobox id="inputCountry" data-id="inputCountry"  value={value} placeholder="Choose a place to fit" options={country}></lightning-combobox>
+
+        <lightning-combobox aura:id="inputYear"  data-id="inputYear" value={value} placeholder="Choose a year of car" options={year} onchange={handleChange}>
+        </lightning-combobox>
+
+
+        <lightning-input aura:id ="Engine" data-id="inputQuantity" class="quantity" type="number" value="" label="Enter quantity"></lightning-input>
+        <section class="countPrice">
+            <lightning-input id="EndPriceResult" data-id="inputExpected" type="text" ></lightning-input>
+            <!-- <p id="EndPriceResult">Expected price: </p> -->
+            <lightning-button aura:id ="countPriceBtn" variant="Count Prise" label="Count Prise" onclick={resultPrice}> </lightning-button>
+        </section>
+        <lightning-button class="prise_but" variant="Place Order" label="Place Order" onclick={handleAccVall}>
+        </lightning-button>
+        
+        
+    </div>
+</template>

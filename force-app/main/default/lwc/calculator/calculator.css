@@ -1,0 +1,23 @@
+body {
+    font: 13px/20px "Lucida Grande", Tahoma, Verdana, sans-serif;
+
+}
+.title_name{
+    margin-left: auto;
+    font-weight: bold;
+}
+.calc_body{
+    display: grid;
+    justify-content: center;
+    grid-row-gap: 3px;
+    grid-auto-columns: minmax(250px, 50%);
+}
+.prise_but{
+    display: grid;
+    margin: auto;
+}
+.countPrice{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: flex-end;
+}
